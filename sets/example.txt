@@ -1,0 +1,10 @@
+LEHRER STUDY SET
+Jane Doe
+06.22.2022
+3
+term0
+define0
+term1
+define1
+term2
+define2
