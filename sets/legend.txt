@@ -1,0 +1,7 @@
+SIGNATURE // denotes file as a Lehrer Study Set
+Author // Person / user who created this set
+Date Created // MM/DD/YYYY
+Integer // Number of "cards" (term-definition pairs) in set
+Term 1
+Definition 1
+etc
