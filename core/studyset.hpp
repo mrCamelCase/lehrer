@@ -12,7 +12,7 @@ class StudySet {
         StudySet(StudySet&& rhs); //move cons
         StudySet& operator=(StudySet&& rhs); //move assign operator
 
-        StudySet(ifstream file);
+        StudySet(string filename);
 
         struct Card {
             string term;
@@ -20,5 +20,8 @@ class StudySet {
         };
     private:
         int size; //size of set
+        string author; //creator of set
+        string date; // date study set was created
+        string name; // set title
         Card* set; //array of card objects
 };

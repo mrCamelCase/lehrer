@@ -47,6 +47,22 @@ StudySet& StudySet::operator=(StudySet&& rhs) {
     return *this;
 }
 
-StudySet::StudySet(ifstream file) {
-    file; //TODO: read input from file and use it to populate card array
+StudySet::StudySet(string filename) {
+    ifstream fileIn(filename);
+    if (fileIn.fail()) {
+        cout << "file read failed" << endl;
+        return;
+    }
+    string buffer;
+    getline(fileIn, buffer);
+    cout << buffer << endl;
+    if (buffer != "LEHRER STUDY SET") {
+        cout << "not a valid study set" << endl;
+        return;
+    }
+    //string title, author, date, numCards; //TODO: move some or all of this file reading functionality to studyset constructor
+    while (getline(fileIn, buffer)) {
+        cout << buffer << endl; //Print contents of file
+    }
+    set = 0;
 }
